@@ -1,7 +1,7 @@
 <?php
 
 require 'function.php';
-
+//ini komentar
 query("SELECT * FROM mahasiswa");
 
 $mahasiswa = query("SELECT * FROM mahasiswa");
@@ -34,7 +34,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 		<td><?= $i ?></td>
 		<td>
 			<a href="">Ubah</a>
-			<a href="hapus.php?id=<?= $row["id"]; ?>">Hapus</a>
+			<a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confrim('yakin?')">Hapus</a>
 		</td>
 		<td><img src="img/<?= $row["gambar"]; ?>" width="70"></td>
 		<td><?= $row["nrp"]; ?></td>
